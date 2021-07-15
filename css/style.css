@@ -1,0 +1,100 @@
+body{
+  background-color: rgb(219, 208, 193);
+}
+
+.border__top{
+  top: 8px;
+}
+
+.border__bottom{
+  bottom: 8px;
+}
+
+.border__right{
+  right: 8px;
+}
+
+.border__left{
+  left: 8px;
+}
+
+.border__top,
+.border__bottom{
+  width: 99%;
+  height: 3px;
+  background-color: #333;
+  left: 8px;
+  position: fixed;
+  z-index: 100000;
+}
+
+.border__right,
+.border__left{
+  width:3px;
+  height: 98%;
+  background-color: #333;
+  top: 8px;
+  position: fixed;
+  z-index: 100000;
+}
+
+header{
+  position: relative;
+  /* height: 250px; */
+}
+
+.header__logo-1{
+  width: 500px;
+  height: 250px;
+  object-fit: cover;
+  position: fixed;
+  left: -3px;
+  top: 3px;
+}
+.header__logo-2{
+  width: 500px;
+  height: 250px;
+  object-fit: cover;
+  position: fixed;
+}
+
+.flex{
+  display: flex;
+}
+
+.menu__rigjt,
+.menu__left{
+  width: 50%;
+  height: 100vh;
+}
+
+.fixed__img{
+  width: 600px;
+  position: fixed;
+  top: 50%;
+  left: 47%;
+  transform: translate(-47%,-50%);
+  object-fit: cover;
+}
+
+.menu__area{
+position: relative;
+height: 100vh;
+}
+
+.menu__img-gu{
+  width: 400px;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%,-35%);
+  position: absolute;
+object-fit: cover;
+}
+@media screen and (max-width:767px){
+.menu__img-gu{
+  width: 280px;
+  top: 40%;
+  left: 60%;
+  transform: translate(-60%,-40%);
+}
+}
